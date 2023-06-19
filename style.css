@@ -1,0 +1,15 @@
+h1 {
+    color: #b04545;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid #b04545;
+}
+
+ul {
+    border: 5px solid;
+    border-color: #b04545;
+}
+
+ul li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}

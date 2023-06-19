@@ -10,6 +10,26 @@ const users = [
 ];
 
 function main() {
+//get element from the DOM
+const root = document.getElementById("root")
+//add elements
+//heading
+const h1 = document.createElement("h1");
+h1.innerHTML = "FREELANCERS";
+root.appendChild(h1);
+//unordered list
+const userList = document.createElement("ul")
+
+//list items from array
+//loop through list of users
+for (let i = 0; i < users.length; i++) {
+    const listElement = document.createElement("li");
+    userList.appendChild(listElement);
+    const currentUser = users[i];
+    //create a list element with user data, append to ul
+    listElement.innerHTML = "Name: " + currentUser.name + " Age: " + currentUser.age + " Occupation: " + currentUser.occupation;
+}
+root.appendChild(userList);
 
 }
 
